@@ -30,4 +30,173 @@
             </ul>
         </nav>
     </header>
+
+
+    </header>
+
+    <!-- Section 1: Home -->
+    <section id="section1" class="jumbotron text-center">
+        <div class="container">
+            <h1 class="display-4">Bem-vindo</h1>
+            <h1 class="display-4">Save our seas</h1>
+            <p class="lead">Melhorando o mundo com a sua ajuda.</p>
+            <a class="btn" href="#section2" role="button">Saiba mais</a>
+        </div>
+    </section>
+    <!-- Section 2: Sobre -->
+    <section id="section2" class="py-5">
+        <div class="container">
+            <h2 class="problema">Problemática</h2>
+            <p class="problema">Promover um gestão sustentável dos oceanos. Buscando informar a população costeira e
+                empresas que utilizam os mares.</p>
+            <img class="garrafa-legal" src="assets/image/imagem-garrafa-new.png" alt="Problema da poluição dos oceanos">
+        </div>
+    </section>
+
+    <!-- Section 3: Serviços -->
+    <section id="section3" class="bg-light py-5">
+        <div class="container">
+            <h2>Tecnologias</h2>
+            <p>Algumas das tecnologias que usamos para desenvolver nosso site.</p>
+            <ul class="lista-tecnologias">
+                <li><img class="imagens" src="assets/image/html-5-icon.png" alt="HTML5"></li>
+                <li><img class="imagens" src="assets/image/css3-icon.png" alt="CSS3"></li>
+                <li><img class="imagens" src="assets/image/js.png" alt="JavaScript"></li>
+            </ul>
+            <ul class="lista-tecnologias">
+                <li>HTML 5</li>
+                <li>CSS 3</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Section 4: Portfólio -->
+    <section id="section4" class="py-5">
+        <div class="container">
+            <h2>Objetivos</h2>
+            <ul class="lista-tecnologias">
+                <li>Auxiliar na limpeza das praias e oceanos.</li>
+                <li>Aumentar esforços em áreas muito poluídas.</li>
+                <li>Dar oportunidade para a população contribuir.</li>
+            </ul>
+            <ul class="lista-tecnologias">
+                <li><img class="imagem-objetivo"
+                        src="https://s2.glbimg.com/TlJs7GckzbmSwRGVrQiw_vv1h2s=/e.glbimg.com/og/ed/f/original/2018/03/21/trash_on_beach_6408224371.jpg"
+                        alt="Lixo na praia"></li>
+                <li><img class="imagem-objetivo"
+                        src="https://imagens.ebc.com.br/vSn0CscEYmOSiZX65z1alu9HL3o=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/atoms/image/plasticos_0.jpg?itok=pKJyR9OW"
+                        alt="Plásticos no oceano"></li>
+                <li><img class="imagem-objetivo"
+                        src="https://climainfo.org.br/wp-content/uploads/2023/03/plasticos-nos-oceanos.jpg"
+                        alt="Poluição dos oceanos"></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Section 5: Depoimentos -->
+    <section id="section5" class="bg-light py-5">
+        <div class="container">
+            <h2>Alvo</h2>
+            <p class="text-center">Hoje temos como principal alvo toda a população mundial.</p>
+            <p class="text-center">Oferecemos um formulário rápido e prático para auxiliar instituições a focar em áreas
+                muito afetadas pelo plástico e demais itens.</p>
+            <img class="imagem-objetivo1" src="assets/image/image-word.webp" alt="Imagem de alvo">
+        </div>
+    </section>
+    <section id="section6" class="py-5">
+        <div class="container">
+            <h2>Benefícios</h2>
+            <ul class="lista-tecnologias">
+                <li>Identificação de pontos poluídos</li>
+                <li>Registro rápido e fácil</li>
+                <li>Gestão de recursos otimizada</li>
+            </ul>
+        </div>
+    </section>
+    <!-- Section 6: Contato -->
+    <section id="section7" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">Contribua</h2>
+            <p class="text-center">Ajude-nos a encontrar áreas muito afetadas pelo plástico!</p>
+        </div>
+        <form class="w-75 mx-auto">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Digite seu email" required>
+            </div>
+            <div class="form-group">
+                <label for="estado">Estado:</label>
+                <input type="text" class="form-control" id="estado" placeholder="Digite seu estado" required>
+            </div>
+            <div class="form-group">
+                <label for="cidade">Cidade:</label>
+                <input type="text" class="form-control" id="cidade" placeholder="Digite sua cidade" required>
+            </div>
+            <div class="form-group">
+                <label for="pais">País:</label>
+                <input type="text" class="form-control" id="pais" placeholder="Digite seu país" required>
+            </div>
+            <button type="button" class="btn btn-secondary mb-3" onclick="getLocation()">Usar minha localização</button>
+            <div class="form-group">
+                <label for="quantidadeLixo">Qual a quantidade de lixo neste local?</label>
+                <select class="form-control" id="quantidadeLixo" required>
+                    <option value="pouca">Pouca</option>
+                    <option value="consideravel">Considerável</option>
+                    <option value="moderada">Moderada</option>
+                    <option value="severa">Severa</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="lixo">Tipo de lixo:</label>
+                <input type="text" class="form-control" id="lixo" placeholder="Descreva os materiais poluentes"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="foto">Foto:</label>
+                <input type="file" class="form-control-file" id="foto" required>
+            </div>
+            <button type="submit" class="btn btn-primary d-block mx-auto">Enviar</button>
+        </form>
+    </section>
+    <section id="section6" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Acompanhe o mapa com os pontos mais poluidos</h2>
+            <ul class="lista-tecnologias">
+                <li><img class="image-center" src="assets/image/mapa-mundi-bolinhas (1).png" width="75%"></li>
+            </ul>
+        </div>
+    </section>
+    <section id="section7" class="bg-light py-5">
+        <h2>Visão computacional beta</h2>
+        <p>Visão inteligente desenvolvida para cameras de barcos e veiculos maritimos para detectar plastico e poluição nos oceanos de acordo com o percentual</p>
+        <button type="button" onclick="init()">Start</button>
+        <div id="webcam-container"></div>
+        <div id="label-container"></div>
+    </section>
+    <section id="feedback-section" class="feedback-section">
+        <h2>Feedback</h2>
+        <div class="feedback-form">
+            <input type="text" id="feedback-input" placeholder="Enter your feedback">
+            <button onclick="addFeedback()">Submit</button>
+        </div>
+        <div class="feedback-list" id="feedback-list"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Save Our Seas. Todos os direitos reservados.</p>
+    </footer>
+    <script src="assets/js/carrocel.js"></script>
+    <script src="assets/js/feedback.js"></script>
+    <script src="assets/js/nav-bar.js"></script>
+    <script src="assets/js/loc.js"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="sketch.js" defer></script>
 </body>
+
+</html>
