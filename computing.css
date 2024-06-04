@@ -1,0 +1,34 @@
+div {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #007bff7d;
+}
+
+#webcam-container, #label-container {
+    margin-top: 20px;
+}
+
+
+#section7 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#label-container {
+    text-transform: capitalize;
+    font-family: monospace;
+}
